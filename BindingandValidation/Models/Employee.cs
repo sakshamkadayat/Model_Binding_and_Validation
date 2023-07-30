@@ -8,7 +8,7 @@ namespace BindingandValidation.Models
         public string FullName { get; set; }
 
 
-        [Required(ErrorMessage = "Your FullName is Required")]
+        [Required(ErrorMessage = "Your Address is Required")]
         public string Address { get; set; }
 
        
