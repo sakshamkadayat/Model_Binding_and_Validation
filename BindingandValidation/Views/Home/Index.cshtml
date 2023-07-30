@@ -1,0 +1,34 @@
+﻿
+@model BindingandValidation.Models.Employee;
+@{
+    ViewData["Title"] = "Home Page";
+}
+<p>Binding and Validation in ASP.NET Core</p>
+<p>Employee Form</p>
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form asp-action="Index" asp-controller="Home" method="post">
+            <input asp-for="FullName" class="form-control" placeholder="Please Enter Your Name"/>
+            <span asp-validation-for="FullName"></span>
+            <br />
+            <input asp-for="Address" class="form-control" placeholder="Please Enter your Address" />
+            <span asp-validation-for="Address"></span>
+
+            <br />
+            <input asp-for="PhoneNumber" class="form-control" placeholder="Please Enter your PhoneNumber" />
+            <span asp-validation-for="PhoneNumber"></span>
+
+            <br />
+            <input asp-for="CitizenshipNo" class="form-control" placeholder="Please Enter your CitizenshipNumber" />
+             <span asp-validation-for="CitizenshipNo"></span>
+
+            <br />
+            <input type="submit" value="Submit" class="btn btn-outline-primary" />
+            </form>
+        </div>
+    </div>
+</div>
